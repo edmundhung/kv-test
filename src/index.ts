@@ -20,6 +20,7 @@ export default {
 		}
 
 		let number = await env.CACHE.get('number');
+		const secret = await env.SECRET.get();
 
 		if (number === null) {
 			number = Math.random().toString();
@@ -34,6 +35,7 @@ export default {
 				</head>
 				<body>
 					<h1>Random number (cached): ${number}</h1>
+					<h2>Secret: ${secret}</h2>
 					<form method="post">
 						<button>Delete cache</button>
 					</form>

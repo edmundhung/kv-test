@@ -13,6 +13,13 @@
 			"id": "my-kv-id"
 		}
 	],
+	"secrets_store_secrets": [
+		{
+			"binding": "SECRET",
+			"secret_name": "my-secret",
+			"store_id": "secret-store"
+		}
+	],
 	"observability": {
 		"enabled": true
 	}
