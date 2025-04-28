@@ -7,6 +7,12 @@
 	"name": "kv-test",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-04-28",
+	"kv_namespaces": [
+		{
+			"binding": "CACHE",
+			"id": "my-kv-id"
+		}
+	],
 	"observability": {
 		"enabled": true
 	}
